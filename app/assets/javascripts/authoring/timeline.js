@@ -91,6 +91,8 @@ var drag_right = d3.behavior.drag()
 var drag_left = d3.behavior.drag()
     .on("drag", leftResize);
 
+console.log(d3.select("#timeline-container"));
+
 var timeline_svg = d3.select("#timeline-container").append("svg")
     .attr("width", SVG_WIDTH)
     .attr("height", SVG_HEIGHT)

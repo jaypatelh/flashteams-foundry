@@ -5,7 +5,7 @@
 
 var ready = function () {
   var textAreaJSON = $('#flash_team_json').val();
-  //console.log(textAreaJSON);
+  if(textAreaJSON.length == 0) return;
   flashTeamsJSON = JSON.parse(textAreaJSON);
   drawFlashTeamFromJSON(flashTeamsJSON);
 }
